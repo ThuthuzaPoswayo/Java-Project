@@ -1,0 +1,56 @@
+
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+::-webkit-scrollbar{
+    display: none;
+}
+.navbar{
+    background-color: burlywood;
+    & img[ alt=logo]{
+        width: 5rem;
+    }
+
+
+}
+.navbar-brand img{
+    width:  5 rem;
+    height: 5 rem;
+    object-fit: cover;
+
+}
+
+
+#heading {
+        font-family: "DM Serif Display", serif;
+        font-weight:
+        font-style: normal;
+        color: #e8c39e;
+        text-align: center;
+        margin-bottom: 80px
+      }
+
+#headingthree {
+  font-family: "Montserrat", sans-serif;
+  color: rgb(133, 101, 59);
+  text-align: left;
+  font-style: normal;
+  margin-bottom: 80px;
+  font-size: 40px;
+}
+.card {
+    margin-bottom: 20px;
+  }
+  
+  .card:not(:last-child) {
+    margin-right: 50px;
+  }
+ .row{
+    background-color: rgb(195, 147, 100);
+ }
+

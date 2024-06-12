@@ -11,7 +11,7 @@
     display: none;
 }
 .navbar{
-    background-color: burlywood;
+    background-color: rgb(112, 94, 69);
     & img[ alt=logo]{
         width: 5rem;
     }
@@ -29,7 +29,7 @@
 #heading {
         font-family: "DM Serif Display", serif;
         font-style: normal;
-        color: #e8c39e;
+        color: #fcdfc1;
         text-align: center;
         margin-bottom: 80px
       }
@@ -49,7 +49,31 @@
   .card:not(:last-child) {
     margin-right: 50px;
   }
+
  .row{
-    background-color: rgb(195, 147, 100);
+    background-color: rgb(227, 185, 144);
+    display: flex;
+
  }
 
+ #woman,
+ #vegan {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-left: 10px;
+  }
+  .container{
+    text-align: center;
+    font-family:"Montserrat", sans-serif ;
+    color: rgb(90, 74, 53);
+    text-align: left;
+    font-weight: normal;
+     }
+
+  
+  
+  
+
+
+  

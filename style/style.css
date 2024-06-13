@@ -11,7 +11,7 @@
     display: none;
 }
 .navbar{
-    background-color: rgb(112, 94, 69);
+    background-color:rgb(147, 119, 92);
     & img[ alt=logo]{
         width: 5rem;
     }
@@ -30,8 +30,10 @@
         font-family: "DM Serif Display", serif;
         font-style: normal;
         color: #fcdfc1;
-        text-align: center;
-        margin-bottom: 80px
+        text-align: left;
+        margin-top: 50px
+    
+        
       }
 
 #headingthree {
@@ -40,19 +42,37 @@
   text-align: left;
   font-style: normal;
   margin-bottom: 80px;
-  font-size: 40px;
+  font-size: 60px;
+  margin-top: 50px;
 }
 .card {
     margin-bottom: 20px;
+   background-color: rgb(255, 220, 226);
+    width: 15rem;
+    font-family: "Montserrat,sans-serif";
+    
+    
   }
   
   .card:not(:last-child) {
     margin-right: 50px;
+ 
   }
 
  .row{
     background-color: rgb(227, 185, 144);
     display: flex;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+ }
+
+ #first{
+    background-image: url('https://thuthuzaposwayo.github.io/All-images/images/satin.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
  }
 
@@ -71,6 +91,28 @@
     font-weight: normal;
      }
 
+     .image-container {
+        display: flex;
+        justify-content: flex-start;
+        align-items: right;
+
+      }
+      
+      .rounded-circle {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        margin-left: 100px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+      }
+
+   
+      img {
+        object-fit: cover;
+        width: 150px;
+      }
+      
   
   
   

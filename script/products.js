@@ -80,4 +80,4 @@ function addToCart(product) {
     }
 }
 window.onload = () => {
-    document.querySelector('[counter]').textContent = checkoutItems.length || 0
+    document.querySelector('[counter]').textContent = checkoutItems.length || 0}

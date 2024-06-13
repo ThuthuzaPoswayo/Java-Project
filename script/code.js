@@ -7,7 +7,7 @@ let products =
                 [
                     {
                         id: 1,
-                        productName: "Hand Filer"
+                        productName: "Hand Filer",
                         category: "Nail Tools",
                         description: "100/180 grit hand file suitable for nail-prep",
                         amount: 20,
@@ -25,15 +25,15 @@ let products =
                         id: 3,
                         productName: "DIY Gel Set",
                         category: "Nail Gel",
-                        description: "Gel products you can use for self",
+                        description: "Gel products you can use by self",
                         amount: 500,
-                        img_url: "https://thuthuzaposwayo.github.io/All-images/images/images/diy gel.jpg"
+                        img_url: "https://thuthuzaposwayo.github.io/All-images/images/diy-gel.jpg"
                     },
                     {
                         id: 4,
                         productName: "Lipoil",
                         category: "Lip Products",
-                        description: "Hydrating lip oil with SPF 15 for extra protection",
+                        description: "Hydrating lip oil with SPF 15 for extra protectionjpg",
                         amount: 200,
                         img_url: "https://thuthuzaposwayo.github.io/All-images/images/lipoil.jpg"
                     },
@@ -42,8 +42,24 @@ let products =
                         productName: "The Blender Set",
                         category: "Makeup  Brushes",
                         description: "23 piece brush set",
-                        amount: 15000,
-                        img_url: "https://thuthuzaposwayo.github.io/All-images/images/blender set.jpg"
+                        amount: 1500,
+                        img_url: "https://thuthuzaposwayo.github.io/All-images/images/blender-set.jpg"
+                    },
+                    {
+                        id: 6,
+                        productName: "Nail Brushes",
+                        category: "Nail Tools",
+                        description: "20 piece nail brush and nails art tools",
+                        amount: 100,
+                        img_url: "https://thuthuzaposwayo.github.io/All-images/images/nail-set.jpg"
+                    },
+                    {
+                        id: 7,
+                        productName: "Gel Polish",
+                        category: "Nail Gel",
+                        description: "Gel set for nail art",
+                        amount: 100,
+                        img_url: "https://thuthuzaposwayo.github.io/All-images/images/gel set.jpg"
                     }
                 ]
             )

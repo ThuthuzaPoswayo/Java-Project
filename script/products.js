@@ -1,4 +1,5 @@
-let container = document.querySelector('[ourStore]')
+
+let container = document.querySelector('#products')
 let searchProduct = document.querySelector('[searchProduct]')
 let sortingByAmount = document.querySelector('[sorting]')
 let products = JSON.parse(
@@ -80,4 +81,6 @@ function addToCart(product) {
     }
 }
 window.onload = () => {
-    document.querySelector('[counter]').textContent = checkoutItems.length || 0}
+    document.querySelector('[counter]').textContent = checkoutItems.length || 0
+}
+    

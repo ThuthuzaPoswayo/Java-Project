@@ -15,14 +15,13 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg sticky-top">
+    <nav class="navbar navbar-expand-lg  sticky-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="../index.html">
-                <img src="https://thuthuzaposwayo.github.io/All-images/images/Finallogo.jpg" alt="logo" loading="lazy">
+                <img src="https://thuthuzaposwayo.github.io/All-images/images/FinalLogo.jpg" alt="logo" loading="lazy">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -34,15 +33,14 @@
                         <a class="nav-link" href="./about.html">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./products.html">Store</a>
+                        <a class="nav-link" href="./products.html">Our Products</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./checkout.html">Checkout
-                            <span
-                                class="badge rounded-pill bg-success"
-                                counter>
+                            <span class="badge rounded-pill bg-success" counter>
                                 0
                             </span>
+             
                         </a>
                     </li>
                     <li class="nav-item">
@@ -70,26 +68,84 @@
             </div>
         </div>
         <div class="row gap-2 justify-content-between mx-2" ourStore></div>
+
+        <div class="row gap-lg-5 justify-content-center" id="products" Products></div>
     </main>
 
 
 
-    
+
 <!-- footer -->
-    <footer class="container-fluid">
-        <div class="row">
-            <p class="lead">Copyright &copy;
-                <span currentYear></span>
-            </p>
+   <footer>
+<div class="row" id="footer">
+    <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+        <h5>ThutzBeauty</h5>
+    </div>
+    
+                <!-- Navigation Links -->
+                <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+                    <h5>Navigation</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="../index.html" class="text-white">Home</a></li>
+                        <li><a href="./about.html" class="text-white">About</a></li>
+                        <li><a href="./products.html" class="text-white">Our Products</a></li>
+                        <li><a href="./admin.html" class="text-white">Admin</a></li>
+                        <li><a href="checkout.html" class="text-white">Checkout</a></li>
+                        <li><a href="./contact.html" class="text-white">Contact Us</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Contact Info -->
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <h5>Contact</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="tel:0835645479" class="text-white">Phone: 0649022355</a></li>
+                        <li><a href="mailto:masterpiecehair@gmail.com" class="text-white">thuthuzaposwayo@gmail.com</a></li>
+                        <li class="text-white"><i class="bi bi-geo-alt"></i>110 Tywaka Road</li>
+                    </ul>
+                </div>
+    
+                <!-- Social Media Links -->
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <h5>Social Media</h5>
+                    <ul class="list-unstyled d-flex">
+                        <li><a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a></li>
+                        <li><a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a></li>
+                        <li><a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a></li>
+             
+                    </ul>
+                </div>
+            </div>
+
+                <div class="row" id="footer">
+                    <p class="lead">Copyright &copy; 
+                        <span currentYear></span>
+                    </p>
+                    </div>
+            </div>
         </div>
-    </footer>
+
+</footer>
 
 
+
+   
+        
+    <script src="../script/products.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-        
-    <script src="../script/products.js"></script>
-</body>
+        <script>
+            document.querySelector('[currentYear]').textContent = new Date().getUTCFullYear()
+        // Counter
+        window.onload = () => {
+            document.querySelector('[counter]').textContent = JSON.parse(localStorage.getItem('checkout'))
+                ? JSON.parse(localStorage.getItem('checkout')).length
+                : 0
+        }
+        </script>
 
-</html>
+    </body>
+ </html>
+
+
